@@ -40,6 +40,7 @@ jobs:
         with:
           # Uses the organization variable unless overridden
           config: ${{ vars.ACTIONS_PERMISSIONS_CONFIG }}
+          debug: true
       # Note that a duplicate of this step must be added at the top of
       # each job.
       - id: harden-runner
@@ -65,6 +66,7 @@ jobs:
         with:
           # Uses the organization variable unless overridden
           config: ${{ vars.ACTIONS_PERMISSIONS_CONFIG }}
+          debug: true
       - id: harden-runner
         name: Harden the runner
         uses: step-security/harden-runner@v2
@@ -203,6 +205,7 @@ jobs:
         with:
           # Uses the organization variable unless overridden
           config: ${{ vars.ACTIONS_PERMISSIONS_CONFIG }}
+          debug: true
       - id: harden-runner
         name: Harden the runner
         uses: step-security/harden-runner@v2
